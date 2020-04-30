@@ -1,0 +1,136 @@
+    <!DOCTYPE html>
+    <html>
+     
+    <head>
+       <title>My Profil</title>
+       <link rel="stylesheet" href="aset/style.css">
+       <script src="aset/script.js"></script>
+    </head>
+     
+    <body onload="tampilan()">
+      <header>
+        <div class="flex-container-row jarak">
+          <nav class="kotak" onclick="biodata()">Biodata</nav>
+          <nav class="kotak" onclick="riwayat()">Riwayat Pendidikan</nav>
+          <nav class="kotak" onclick="sosmed()">Sosmed</nav>
+        </div>
+      </header>
+        <main>
+          <div id="biodata">
+            <div class="flex-container-row jarak garis">
+              <div id="isi-biodata" class="flex-container-column double garis">
+                <div class="flex-container-column">
+                  <div class="konten">About</div>
+                    <article>
+                      <center class="jarak">
+                        Hi! Nama saya Ridho Darman, ini merupakan bagian dari <i>"Belajar Dasar Pemrograman Web, Oleh: Dicoding Indonesia"</i>
+                      </center>
+                    </article>
+                  </div>
+                  <div class="flex-container-column">
+                    <div class="konten">Information</div>
+                      <table width="100%" class="jarak">
+                        <tr>
+                          <td>Nama Lengkap</td>
+                          <td>:</td>
+                          <td>Ridho Darman</td>
+                        </tr>
+                        <tr>
+                          <td>Umur</td>
+                          <td>:</td>
+                          <td>XX Tahun</td>
+                        </tr>
+                        <tr>
+                          <td>Alamat</td>
+                          <td>:</td>
+                          <td>Khatib Sulaiman, Kota Padang, Provinsi Sumatera Barat</td>
+                        </tr>
+                      </table>
+                  </div>
+                </div>
+                <div class="flex-container-column"></div>
+                <div class="flex-container-column garis">
+                  <aside>
+                    <dl>
+                      <dt>Jenis Kelamin:</dt>
+                      <dd>Laki-laki</dd>
+                    </dl>
+                    <dl>
+                      <dt>Kewarganegaraan:</dt>
+                      <dd>Indonesia</dd>
+                      <dd><img src="aset/img/id.png" width="100px"> </dd>
+                    </dl>
+                  </aside>
+                </div>
+              </div>
+          </div>
+          <div id="riwayat" class="garis">
+            <div class="flex-container-row">
+              <div class="konten cek">
+                <input type="checkbox" name="" id="pg" onclick="cekriwayat()">TK
+              </div>
+              <div class="konten cek">
+                <input type="checkbox" name="" id="es" onclick="cekriwayat()">SD
+              </div>
+              <div class="konten cek">
+                <input type="checkbox" name="" id="sltp" onclick="cekriwayat()">SLTP
+              </div>
+              <div class="konten cek">
+                <input type="checkbox" name="" id="slta" onclick="cekriwayat()">SLTA
+              </div>
+              <div class="konten cek">
+                <input type="checkbox" name="" id="pt" onclick="cekriwayat()">PT
+              </div>
+            </div>
+            <div class="flex-container-row">
+              <div class="konten sekolah" id="tk">
+                <img src="aset/img/tk.png" height="170px">
+                <br> TK Baiturrahmah 
+              </div>
+              <div class="konten sekolah" id="sd">
+                <img src="aset/img/sd.png" height="170px">
+                <br> SD Baiturrahmah
+              </div>
+              <div class="konten sekolah" id="smp">
+                <img src="aset/img/smp.png" height="150px">
+                <br> SMP Negeri 2 Padang
+              </div>
+            </div>
+            <div class="flex-container-row">
+              <div class="konten sekolah" id="sma">
+                <img src="aset/img/sma.png" height="160px">
+                <br> SMA N 10 Padang
+              </div>
+              <div class="konten sekolah" id="kuliah">
+                <img src="aset/img/pt.png" height="150px">
+                <br> Univ. Andalas
+              </div>
+            </div>
+          </div>
+          <div id="sosmed">
+            <div class="flex-container-column">
+              <div class="konten sosmed">
+                <marquee direction="up" scrollamount="20" width="200" height="200" behavior="alternate">
+                  <a href="https://github.com/ridhodarman/" target="_blank">
+                    <img src="aset/img/github.png" height="80px">
+                    <br><font color="white"> github </font></br>
+                  </a>
+                </marquee>
+              </div>
+              <div class="konten sosmed">
+                <marquee direction="down" scrollamount="20" width="200" height="200" behavior="alternate">
+                  <a href="https://www.linkedin.com/in/ridho-darman-315a1a110/" target="_blank">
+                    <img src="aset/img/linkedin.png" height="80px">
+                    <br><font color="#34aeeb"> Linkedin </font></br>
+                  </a>
+                </marquee>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="kaki">
+          <font onclick="dicoding()" style="cursor: pointer;">Dicoding: Ridho Darman</font>
+        </footer>
+    </body>
+     
+    </html>
